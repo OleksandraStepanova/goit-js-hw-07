@@ -9,5 +9,8 @@ function getName(event) {
     if (!arr.every(v => v === " ")) {
          hello.innerHTML = event.currentTarget.value.trim();
     }
+    else {
+        hello.innerHTML = 'Anonymous';
+    }
    
 }
