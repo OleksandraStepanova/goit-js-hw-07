@@ -10,6 +10,6 @@ elements.forEach(function (element) {
     const textTitle = element.firstElementChild.textContent;
     console.log("Category: " + textTitle);
     const numberChild = element.lastElementChild.children.length;
-    console.log("Elements: " + numberChild);
+    console.log("Elements: " + numberChild);    
 })
 

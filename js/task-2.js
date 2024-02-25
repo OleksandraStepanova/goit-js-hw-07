@@ -32,5 +32,5 @@ const gallary = document.querySelector(".gallery");
 gallary.insertAdjacentHTML("beforeend", createGallery(images));
 
 function createGallery(arr) {
-  return arr.map(({ url, alt}) => `<li class="photo"><img class="item" src="${url}" alt="${alt}" width="360" higtht="300"></li>`).join("");
+  return arr.map(({ url, alt}) => `<li class="photo"><img class="item-gallery" src="${url}" alt="${alt}" width="360" higtht="300"></li>`).join("");
 }
