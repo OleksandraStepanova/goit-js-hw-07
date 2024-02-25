@@ -15,8 +15,8 @@ function destroyBoxes(event) {
 
 const inputElement = document.querySelector("input");
 
-const input = document.querySelector("#controls");
-input.firstElementChild.addEventListener("input", createNumber);
+inputElement.addEventListener("input", createNumber);
+
 let newNumber = 0;
 function createNumber(event) {
   newNumber = parseInt(event.currentTarget.value);  
