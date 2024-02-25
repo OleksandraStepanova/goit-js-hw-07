@@ -27,6 +27,7 @@ create.addEventListener("click", createDiv);
 function createDiv(event) {
   createBoxes(newNumber);
   inputElement.value = '';
+  newNumber = 0;
 }
 
 const boxes = document.querySelector("#boxes");
