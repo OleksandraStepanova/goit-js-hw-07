@@ -15,7 +15,7 @@ function destroyBoxes(event) {
 
 const inputElement = document.querySelector("input");
 
-inputElement.addEventListener("input", createNumber);
+inputElement.addEventListener("blur", createNumber);
 
 let newNumber = 0;
 function createNumber(event) {
@@ -24,7 +24,7 @@ function createNumber(event) {
 
 const create = document.querySelector('button[data-create]');
 create.addEventListener("click", createDiv);
-function createDiv(event) {
+function createDiv() {
   createBoxes(newNumber);
   inputElement.value = '';
   newNumber = 0;
