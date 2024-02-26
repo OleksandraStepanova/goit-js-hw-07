@@ -3,16 +3,19 @@ const form = document.querySelector("form");
 form.addEventListener("submit",addUser);
 
 function addUser(event) {
+    const email = event.target.elements.email.value.trim();
+    const password = event.target.elements.password.value.trim();
     event.preventDefault();
-    const login = event.target.elements.email.value;
-    const password = event.target.elements.password.value;
-    if ((login==='') || (password === '')) {
+    event.target.elements.email.value = ``;
+    event.target.elements.password.value = ``;
+   
+    if ((email==='') || (password === '')) {
         alert('All form fields must be filled in')
     }
     else {
     const user = {
-        login: login.trim(),
-        password: event.target.elements.password.value.trim()
+        email,
+        password
     };
     console.log(user);
     } 
